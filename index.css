@@ -1,0 +1,12 @@
+body {
+}
+
+h1 {
+  color: #34495e;
+  font-size: 80px;
+  transition: color 0.5s ease-in-out;
+}
+
+.btn {
+  cursor: pointer;
+}
