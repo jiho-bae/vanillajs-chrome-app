@@ -1,6 +1,52 @@
 body {
   background-color: #2c3e50;
   transition: color 0.5s ease-in-out;
+  color: white;
+}
+input {
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  width: 400px;
+  height: 30px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+input::placeholder {
+  color: white;
+  font-size: 20px;
+}
+
+.toDo-span {
+  display: block;
+  font-size: 30px;
+}
+.css-weather {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.js-title {
+  margin-top: 40vh;
+  font-size: 150px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.css-clock,
+.form,
+.grettings,
+.toDoForm,
+.toDoList {
+  text-align: center;
+  justify-content: center;
+}
+
+.form,
+.grettings {
+  font-size: 30px;
 }
 
 .btn {
@@ -16,6 +62,9 @@ body {
   display: block;
 }
 
+.toDoList {
+  list-style: none;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
