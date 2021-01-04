@@ -32,6 +32,7 @@ function paintToDo(text) {
   li.appendChild(span);
   li.appendChild(delBtn);
   li.id = newId;
+  li.classList.add("toDoList__lists");
   toDoList.appendChild(li);
 
   const toDoObj = {
@@ -46,6 +47,7 @@ function handleSubmit(event) {
   event.preventDefault();
   const currentValue = toDoInput.value;
   paintToDo(currentValue);
+  toDoInput.value = "";
 }
 
 function loadToDos() {

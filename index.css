@@ -37,34 +37,56 @@ input::placeholder {
 }
 .css-clock,
 .form,
-.grettings,
+.greetings,
 .toDoForm,
 .toDoList {
   text-align: center;
   justify-content: center;
 }
 
+.toDoForm {
+  margin-top: 30px;
+}
+
 .form,
-.grettings {
+.greetings {
+  display: none;
   font-size: 30px;
+}
+
+.greetings-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greetings-div span {
+  width: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 20px;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .btn {
   cursor: pointer;
 }
 
-.form,
-.grettings {
-  display: none;
-}
-
 .showing {
   display: block;
+  margin: 0px 0px;
 }
 
 .toDoList {
   list-style: none;
 }
+
+.toDoList__lists button {
+  background-color: transparent;
+  border: none;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
